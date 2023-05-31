@@ -23,9 +23,6 @@ To write the python program for simulating ping command.
 ## PROGRAM :
 
 ### CLIENT :
-```
-# Developed by : PRIYANKA.A
-# Register Number : 212222230113
 import socket
 from pythonping import ping
 s=socket.socket()
@@ -38,9 +35,7 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode())
     except KeyError:
         c.send("Not Found".encode())
-```
 ### SERVER :
-```
 # Developed by : PRIYANKA.A
 # Register Number : 212222230113
 import socket
@@ -50,7 +45,7 @@ while True:
     ip=input("Enter the website you want to ping ")
     s.send(ip.encode())
     print(s.recv(1024).decode())
-```
+
 ## OUTPUT :
 
 ### CLIENT :

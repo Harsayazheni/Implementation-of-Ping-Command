@@ -36,8 +36,7 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 ### SERVER :
-# Developed by : PRIYANKA.A
-# Register Number : 212222230113
+
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
